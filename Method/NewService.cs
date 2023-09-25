@@ -85,11 +85,10 @@ namespace Haunt.Method
                 {
                     if (StartService(serviceHandle, 0, null) == 0)
                     {
-                        Console.WriteLine("Failed to start service.");
+                        Console.WriteLine("Potential Error.");
                     }
 
                     CloseServiceHandle(serviceHandle);
-                    Console.WriteLine("Service created and started successfully.");
                 }
             }
             finally
